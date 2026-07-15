@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimplifAI</title>
+
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>Simplif<span>AI</span></h1>
+
+        <p>Understand anything instantly.</p>
+
+    </div>
+
+    <div class="card">
+
+        <label>
+            Reading Goal
+        </label>
+
+        <select id="goal">
+
+            <option>Exam Preparation</option>
+
+            <option>Research</option>
+
+            <option>Interview Preparation</option>
+
+            <option>Quick Understanding</option>
+
+        </select>
+
+    </div>
+
+    <div class="card">
+
+        <label>
+            Selected Text
+        </label>
+        
+        <textarea
+            id="selectedText"
+            readonly
+            placeholder="Highlight text on any webpage..."
+        ></textarea>
+
+    </div>
+
+    <button id="analyzeBtn">
+
+        ✨ Analyze with SimplifAI
+
+    </button>
+
+    <div id="loading" class="hidden">
+
+        <p id="loadingText">🧠 Reading text...</p>
+
+    </div>
+
+    <div id="result" class="hidden">
+
+        <div class="result-card">
+
+    <div class="translate-header">
+
+        <h3>📖 Simplified</h3>
+
+        <div class="translate-controls">
+
+            <select id="language">
+                <option value="English">🇬🇧 English</option>
+                <option value="Hindi">🇮🇳 Hindi</option>
+                <option value="Bengali">🇧🇩 Bengali</option>
+                <option value="Spanish">🇪🇸 Spanish</option>
+            </select>
+
+            <button id="translateBtn">
+                🌐
+            </button>
+
+        </div>
+
+    </div>
+
+    <p id="simplified"></p>
+
+</div>
+
+        <div class="result-card">
+
+            <h3>📝 Summary</h3>
+
+            <p id="summary"></p>
+
+        </div>
+
+        <div class="result-card">
+
+            <h3>🧩 Key Concepts</h3>
+
+            <div id="concepts"></div>
+
+        </div>
+
+        <div class="grid">
+
+            <div class="small-card">
+
+                <h4>Difficulty</h4>
+
+                <p id="difficulty"></p>
+
+            </div>
+
+            <div class="small-card">
+
+                <h4>Goal</h4>
+
+                <p id="readingGoal"></p>
+
+            </div>
+
+        </div>
+
+        <div class="result-card">
+
+    <h3>💬 Ask SimplifAI</h3>
+
+    <div id="chatContainer" class="chat-container">
+
+        <div id="messages"></div>
+
+    </div>
+
+    < class="chat-input">
+
+    <input
+        id="question"
+        type="text"
+        placeholder="Ask anything about this text..."
+    />
+
+    <button id="askBtn">➜</button>
+
+
+
+</div>
+
+    </div>
+
+</div>
+
+<script src="popup.js"></script>
+
+</body>
+</html>

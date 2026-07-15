@@ -1,0 +1,283 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  width: 420px;
+  background: #0f1117;
+  color: white;
+}
+
+.container {
+  padding: 18px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header span {
+  color: #8b5cf6;
+}
+
+.header p {
+  color: #9ca3af;
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.card {
+  background: #181c25;
+  border: 1px solid #272b36;
+  border-radius: 14px;
+  padding: 15px;
+  margin-bottom: 16px;
+}
+
+.card label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+select,
+textarea,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #222734;
+  color: white;
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: none;
+  height: 110px;
+}
+
+input {
+  margin-top: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  transition: .25s;
+}
+
+#analyzeBtn {
+  background: #8b5cf6;
+  color: white;
+  margin-bottom: 18px;
+}
+
+#analyzeBtn:hover {
+  background: #7c3aed;
+}
+
+#askBtn {
+  margin-top: 12px;
+  background: #2563eb;
+  color: white;
+}
+
+#askBtn:hover {
+  background: #1d4ed8;
+}
+
+.hidden {
+  display: none;
+}
+
+#loading {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+#loading p {
+  font-size: 15px;
+  color: #d1d5db;
+  animation: pulse 1.2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0.4;
+    transform: scale(0.98);
+  }
+}
+
+.result-card {
+  background: #181c25;
+  border: 1px solid #272b36;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.result-card h3 {
+  margin-bottom: 10px;
+  color: #a78bfa;
+}
+
+.result-card p {
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.small-card {
+  background: #181c25;
+  border: 1px solid #272b36;
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+}
+
+.small-card h4 {
+  color: #9ca3af;
+  margin-bottom: 8px;
+}
+
+#concepts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.concept {
+  background: #8b5cf620;
+  color: #c4b5fd;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+#answer {
+  margin-top: 14px;
+  line-height: 1.7;
+}
+.chat-container{
+    height:220px;
+    overflow-y:auto;
+    background:#11151d;
+    border:1px solid #2c3242;
+    border-radius:12px;
+    padding:12px;
+    margin-bottom:15px;
+}
+
+.message{
+    margin-bottom:14px;
+    line-height:1.7;
+}
+
+.user{
+    text-align:right;
+}
+
+.user span{
+    display:inline-block;
+    background:#7c3aed;
+    color:white;
+    padding:10px 14px;
+    border-radius:14px;
+    max-width:90%;
+}
+
+.ai span{
+    display:inline-block;
+    background:#232938;
+    color:white;
+    padding:10px 14px;
+    border-radius:14px;
+    max-width:90%;
+}
+.chat-input {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.chat-input input {
+  flex: 1;
+}
+
+.chat-input button {
+  width: 50px;
+  border-radius: 12px;
+  background: #8b5cf6;
+}
+
+.chat-input button:hover {
+  background: #7c3aed;
+}
+.translate-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.translate-controls {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.translate-controls select {
+    background: #1f2937;
+    color: white;
+    border: 1px solid #374151;
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 13px;
+    outline: none;
+    cursor: pointer;
+}
+
+.translate-controls button {
+    background: linear-gradient(135deg, #8b5cf6, #6d28d9);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.translate-controls button:hover {
+    transform: scale(1.05);
+}

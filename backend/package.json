@@ -1,0 +1,24 @@
+{
+  "name": "simplifai-backend",
+  "version": "1.0.0",
+  "description": "Backend API for SimplifAI",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/genai": "^1.27.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "pdfjs-dist": "^6.1.200"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
