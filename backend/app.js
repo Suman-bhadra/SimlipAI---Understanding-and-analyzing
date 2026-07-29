@@ -3,8 +3,10 @@ import cors from "cors";
 import dotenv from "dotenv";
 
 import aiRoutes from "./routes/aiRoutes.js";
+import connectDB from "./config/db.js";
 
 dotenv.config();
+connectDB();
 
 const app = express();
 
