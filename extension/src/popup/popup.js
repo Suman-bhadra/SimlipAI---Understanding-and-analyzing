@@ -1,5 +1,6 @@
 console.log("popup.js loaded");
 const selectedText = document.getElementById("selectedText");
+const BASE_URL = window.BASE_URL || "http://localhost:5000";
 const analyzeBtn = document.getElementById("analyzeBtn");
 const loading = document.getElementById("loading");
 const result = document.getElementById("result");
@@ -53,7 +54,7 @@ clearInterval(loadingInterval);
 
   try {
     console.log("Sending fetch request...");
-    const response = await fetch("http://localhost:5000/api/ai/analyze", {
+    const response = await fetch(`${BASE_URL}/api/ai/analyze`, {
 
       method: "POST",
 
@@ -149,7 +150,7 @@ loadingInterval = setInterval(() => {
   i = (i + 1) % loadingSteps.length;
   loadingText.textContent = loadingSteps[i];
 }, 900);
-    const response = await fetch("http://localhost:5000/api/ai/chat", {
+    const response = await fetch(`${BASE_URL}/api/ai/chat`, {
 
       method: "POST",
 
@@ -236,7 +237,7 @@ translateBtn.addEventListener("click", async () => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/ai/translate",
+            `${BASE_URL}/api/ai/translate`,
             {
 
                 method: "POST",
