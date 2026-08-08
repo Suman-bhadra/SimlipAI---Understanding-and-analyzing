@@ -12,7 +12,7 @@
   ],
 
   "host_permissions": [
-    "https://simlipai-understanding-and-analyzing.onrender.com"
+    "https://simlipai-understanding-and-analyzing.onrender.com/*"
   ],
 
   "background": {
