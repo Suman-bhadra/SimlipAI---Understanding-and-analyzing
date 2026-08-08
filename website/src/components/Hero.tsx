@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import {
   //ArrowRight,
-  Download,
+ // Download,
   Sparkles,
   BookOpen,
   Brain,
@@ -36,14 +36,8 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-5 mt-12">
-            <a
-  href="Extension.zip"
-  download
-  className="btn-primary flex items-center gap-2"
->
-  <Download size={18} />
-  Download for Chrome
-</a>
+            
+
 
             
           </div>
