@@ -57,7 +57,7 @@ export default function CTA() {
     <p>Follow these quick steps to test the fully functional Chrome Extension connected to our live Render backend:</p>
     
     {/* Direct Download Button */}
-    <a href="/extension.zip" download="Extension.zip" style={{ display: 'inline-block', background: '#4F46E5', color: 'white', padding: '10px 20px', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold', marginBottom: '15px' }}>
+    <a href="/Extension.zip" download="Extension.zip" style={{ display: 'inline-block', background: '#4F46E5', color: 'white', padding: '10px 20px', textDecoration: 'none', borderRadius: '5px', fontWeight: 'bold', marginBottom: '15px' }}>
         📥 Download Extension (ZIP)
     </a>
 
