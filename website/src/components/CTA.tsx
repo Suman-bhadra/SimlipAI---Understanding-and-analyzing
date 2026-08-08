@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Download } from "lucide-react";
+//import { Download } from "lucide-react";
 
 export default function CTA() {
   return (
@@ -40,10 +40,7 @@ export default function CTA() {
 
             <div className="flex flex-wrap justify-center gap-5 mt-10">
 
-              <button className="btn-primary flex items-center gap-2 px-8 py-4">
-                <Download size={20} />
-                Download for Chrome
-              </button>
+              
 
               
 

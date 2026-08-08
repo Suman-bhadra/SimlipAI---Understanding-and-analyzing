@@ -1,4 +1,4 @@
-import { BrainCircuit, Download, Menu, X } from "lucide-react";
+import { BrainCircuit,  Menu, X } from "lucide-react";
 import { useState } from "react";
 
 export default function Navbar() {
@@ -10,7 +10,7 @@ export default function Navbar() {
         <div className="glass rounded-2xl border border-white/10 backdrop-blur-xl px-6 h-20 flex items-center justify-between">
 
           <a href="#" className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-violet-500 to-violet-700 flex items-center justify-center shadow-lg shadow-violet-700/30">
+            <div className="w-12 h-12 rounded-2xl bg--to-br from-violet-500 to-violet-700 flex items-center justify-center shadow-lg shadow-violet-700/30">
               <BrainCircuit size={24} className="text-white" />
             </div>
 
@@ -30,12 +30,7 @@ export default function Navbar() {
             <a href="#faq" className="hover:text-violet-400 transition">FAQ</a>
           </nav>
 
-          <div className="hidden lg:flex items-center gap-4">
-            <button className="btn-primary flex items-center gap-2 px-6">
-              <Download size={18}/>
-              Add to Chrome
-            </button>
-          </div>
+          
 
           <button
             className="lg:hidden text-white"
@@ -52,10 +47,7 @@ export default function Navbar() {
               <a href="#demo" onClick={()=>setOpen(false)}>Demo</a>
               <a href="#faq" onClick={()=>setOpen(false)}>FAQ</a>
 
-              <button className="btn-primary flex items-center justify-center gap-2 mt-2">
-                <Download size={18}/>
-                Add to Chrome
-              </button>
+              
             </div>
           </div>
         )}

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import {
-  ArrowRight,
+  //ArrowRight,
   Download,
   Sparkles,
   BookOpen,
@@ -37,7 +37,7 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-5 mt-12">
             <a
-  href="/SimplifAI-Extension.zip"
+  href="Extension.zip"
   download
   className="btn-primary flex items-center gap-2"
 >
@@ -45,10 +45,7 @@ export default function Hero() {
   Download for Chrome
 </a>
 
-            <button className="btn-secondary flex items-center gap-2">
-              Live Demo
-              <ArrowRight size={18} />
-            </button>
+            
           </div>
 
           <div className="mt-16 flex flex-wrap gap-4">
