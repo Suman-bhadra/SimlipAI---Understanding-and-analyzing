@@ -1,6 +1,6 @@
 console.log("popup.js loaded");
 const selectedText = document.getElementById("selectedText");
-const BASE_URL = window.BASE_URL || "https://simlipai-understanding-and-analyzing.onrender.com";
+ BASE_URL = window.BASE_URL || "https://simlipai-understanding-and-analyzing.onrender.com";
 const analyzeBtn = document.getElementById("analyzeBtn");
 const loading = document.getElementById("loading");
 const result = document.getElementById("result");
