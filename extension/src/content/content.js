@@ -52,9 +52,9 @@ document.addEventListener("mouseup", () => {
     console.log("Chrome object:", chrome);
     console.log("Chrome storage:", chrome.storage);
 
-    chrome.storage.local.set({
-      selectedText: text,
-    });
+    chrome.storage.local.set({ selectedText: text }, () => {
+    console.log("Text saved successfully");
+});
 
   }
 
