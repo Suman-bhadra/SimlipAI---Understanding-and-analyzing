@@ -64,7 +64,7 @@ export default function CTA() {
     {/* Step-by-Step Guide */}
     <ol style={{ margin: '0', paddingLeft: '20px', lineHeight: '1.6' }}>
         <li><strong>Extract:</strong> Download the ZIP file above and extract (unzip) it on your computer.</li>
-        <li><strong>Open Chrome:</strong> Go to a new tab and open <code style={{ background: '#F3F4F6', padding: '2px 6px', borderRadius: '4px' }}>chrome://extensions/</code></li>
+        <li><strong>Open Chrome:</strong> Go to a new tab and open <code style={{ background: '#F3F4F6', padding: '2px 6px', borderRadius: '4px' }}> extensions </code></li>
         <li><strong>Developer Mode:</strong> Toggle the <strong>Developer mode</strong> switch in the top-right corner to ON.</li>
         <li><strong>Load Unpacked:</strong> Click the <strong>Load unpacked</strong> button in the top-left corner and select your extracted folder!</li>
     </ol>
